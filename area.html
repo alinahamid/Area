@@ -1,0 +1,26 @@
+<html>
+    <body>
+    <form name="Form1">
+      
+        Radius: <input type="number" name="Radius">
+        <br>
+        <br>
+        Area: <input type="number" name="Area">
+        <br>
+        <br>
+        
+        <input type="button" onclick="fcalculate()">
+    </form>
+        <script>
+            function fcalculate()
+            {
+               var R=document.Form1.Radius.Value;
+               var A=3.14*R*R;
+               document.Form1.Area.Value=A;
+               alert(A);
+               alert("done");
+            }
+        </script>
+        </body>
+        
+</html>
